@@ -58,7 +58,7 @@ ebin/%.beam: src/%.erl
 
 ## Elisp
 elisp/%.elc: elisp/%.el
-	${emacs} -batch -L /usr/local/opt/erlang/lib/erlang/lib/tools-2.11/emacs -L elisp -f batch-byte-compile $<
+	${emacs} -batch -L /usr/local/opt/erlang@19/lib/erlang/lib/tools-2.9.1/emacs -L elisp -f batch-byte-compile $<
 
 ## Info documentation
 doc/distel.info: ${DOC_SRC}
